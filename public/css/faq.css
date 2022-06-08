@@ -1,0 +1,154 @@
+/* -------FAQs Section Styling-------- */
+.faqs_section{
+    margin: 5rem 4rem 0 4rem;
+}
+
+.faqs_selection_btn_div p{
+    color: #898989 !important;
+    font-size: 1.2rem;
+}
+
+.faqs_select_btn{
+    padding: 1rem 2.5rem;
+    font-size: 0.8rem;
+    background-color: var(--we_serve_section_cards_headings_color);
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.2ch;
+    text-transform: uppercase;
+    border: 2px solid var(--we_serve_section_cards_headings_color);
+    position: relative;
+    transition: all .1s ease-out;
+    margin-top: 1.5rem;
+    z-index: 1;
+    outline: none;
+    width: 100%;
+}
+
+/* ------Promote Section Styling------- */
+.promote_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f7f5;
+    min-height: 10rem;
+    margin: 3rem 0rem 0 0rem;
+}
+
+.promote_section .text{
+    color: #898989;
+    width: 60%;
+    font-size: 1.3rem;
+    letter-spacing: .01rem;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.btn button{
+    color: #898989 !important;
+    background-color: #f8f7f5 !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+    padding: 1.6rem 2.3rem !important;
+    font-size: .7rem;
+}
+
+.btn button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.btn button:hover{
+    color: white !important;
+}
+
+.container_main_btn{
+    z-index: 0 !important;
+}
+
+.faqs_q_and_a_section{
+    margin-top: 5rem;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    background: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content p, .content li{
+    color: #898989;
+    line-height: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.first{
+    display: block;
+}
+
+.second, .third, .fourth, .fifth{
+    display: none;
+}
+
+/* ------Media Queries------- */
+@media screen and (max-width: 560px) {
+    .promote_section{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .promote_section .text{
+        text-align: center;
+    }
+
+    .promote_section .btn{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .promote_section .text{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    .promote_section .text{
+        font-size: 1rem;
+    }
+}

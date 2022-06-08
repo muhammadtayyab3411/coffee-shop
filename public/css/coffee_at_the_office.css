@@ -1,0 +1,281 @@
+.section_main_headings{
+    margin-top: 5rem;
+}
+
+.coffee_machines_images_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    height: 20rem;
+}
+
+.coffee_machines_img_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.first:hover > img, .second:hover > img, .third:hover > img{
+    width: 5.5rem;
+    height: 9rem;
+}
+
+.coffee_machines_img_column:not(:last-child){
+    margin-right: 6rem;
+}
+
+.coffee_machines_img_column h3{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 8rem;
+}
+
+.coffee_machines_img_column h3 span i{
+    position: relative;
+    transition: all 4s ease-in-out;
+}
+
+.coffee_machines_img_column h3 span i{
+    font-size: 1.2rem;
+}
+
+.coffee_machines_img_column p{
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 0.5rem;
+}
+
+.coffee_machines_img_column img{
+    width: 5rem;
+    height: 8rem;
+    transition: all .4s ease-in-out;
+}
+
+
+.first:hover > h3 > span > i, .second:hover > h3 > span > i, .third:hover > h3 > span > i{
+    left: 1rem;
+}
+
+/* ------Micro Market Stling-------- */
+
+.micro_market_content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 7rem 5rem 0 5rem;
+}
+
+.micro_market_content_list{
+    width: 40%;
+}
+
+.micro_market_content_list li strong{
+    color: black;
+}
+
+.micro_market_content_list li{
+    line-height: 2rem;
+    color: #787878;
+}
+
+.micro_market_content_list li:not(:last-child){
+    margin-bottom: 4rem;
+}
+
+.micro_market_content_img img{
+    width: 30rem;
+    height: 23rem;
+    margin-left: 2rem;
+}
+
+/* ----------Our Coffee Section Styling--------- */
+.our_coffee_section{
+    margin-top: 7rem;
+}
+
+.we_serve_section_cards_headings h1{
+    margin-bottom: 2rem;
+}
+
+.we_serve_section_cards_headings p{
+    line-height: 2rem;
+    color: #787878;
+    max-width: 60ch;
+}
+
+.card{
+    align-items: flex-start;
+}
+
+/* --------Business Services Section Styling---------- */
+.business_services_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f7f5;
+    margin: 0 4rem;
+}
+
+.business_services_section .business_services_section_lists{
+    margin: 6rem 0 5rem 0;
+}
+
+.business_services_section .business_services_section_lists li{
+    font-size: 1.2rem;
+}
+
+.business_services_section .business_services_section_lists li:not(:first-child){
+    margin-top: 2rem;
+}
+
+/* ---------Promote Section Styling */
+.promote_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 15rem;
+    margin: 5rem 4rem 0 4rem;
+}
+
+.promote_section .text{
+    color: white;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn button{
+    color: white !important;
+    background-color: black !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+    padding: 1.6rem 2.3rem !important;
+    font-size: .7rem;
+}
+
+.btn button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.btn button:hover{
+    color: white !important;
+}
+
+@media screen and (max-width: 820px) {
+    .micro_market_content_img img{
+        width: 25rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .we_serve_section_cards_headings h1, .we_serve_section_cards_headings p{
+        text-align: center;        
+    }
+
+    .micro_market_content{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .micro_market_content_img img{
+        margin-left: 0;
+    }
+
+    .micro_market_content_list{
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .micro_market_content_list li{
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .promote_section{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .promote_section .text{
+        text-align: center;
+    }
+
+    .promote_section .btn{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .coffee_machines_images_section{
+        flex-direction: column;
+        height: 55rem;
+        margin-top: 0;
+    }
+
+    .coffee_machines_images_section .coffee_machines_img_column{
+        margin-right: 0;
+    }
+
+    .coffee_machines_images_section .coffee_machines_img_column:not(:first-child){
+        margin-top: 3rem;
+    }
+
+    .promote_section .text{
+        font-size: 1.3rem;
+    }
+
+    .business_services_section{
+        padding: 0 1rem;
+    }
+
+    .business_services_section .business_services_section_lists{
+        text-align: center;
+        list-style: none;
+        padding: 0 2rem;
+    }
+
+    .section_main_headings h1{
+        font-size: 3.2rem !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .micro_market_content_img img{
+        width: 20rem;
+        height: 13rem;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .micro_market_content_img img{
+        width: 15rem;
+        height: 8rem;
+    }
+
+    .card img{
+        width: 14rem !important;
+        height: 9rem !important;
+    }
+}
+
+@media screen and (max-width: 240px){
+    .micro_market_content_img img{
+        width: 10rem;
+        height: 8rem;
+    }
+}

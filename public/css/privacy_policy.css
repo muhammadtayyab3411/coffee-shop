@@ -1,0 +1,28 @@
+.privay_policy_section{
+    margin: 9rem 4rem 0 4rem;
+}
+
+.privacy_policy_section_headings{
+    text-align: center;
+}
+
+.privacy_policy_section_headings h2{
+    font-size: 1.8rem;
+}
+
+.privacy_policy_section_headings h3{
+    font-size: 1.6rem;
+}
+
+.privacy_policy_section_content li{
+    list-style: decimal;
+    margin-top: 2rem;
+}
+
+.privacy_policy_section_content li h4{
+    display: inline-block;
+}
+
+.privacy_policy_section_content li h4, .privacy_policy_section_content p{
+    line-height: 1.5rem;
+}

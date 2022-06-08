@@ -1,0 +1,185 @@
+/* ----Body Styling------ */
+html, body{
+    scroll-behavior: smooth !important;
+}
+
+/* -------Inner Navigation Styling------ */
+.our_coffee_navigation{
+    background-color: #f8f7f5;
+    padding: 3rem 0 0 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 6px 9px 0 rgb(0 0 0 / 6%), 0 1px 1px 0 rgb(0 0 0 / 3%);
+    z-index: 1;
+}
+
+.our_coffee_navigation_items_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_coffee_navigation_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #e9e7e4;
+    padding: 0 2rem 1.5rem 1rem;
+    width: 12rem;
+}
+
+.our_coffee_navigation_item:last-child{
+    border-right: 1px solid #e9e7e4;
+}
+
+.our_coffee_navigation_item img{
+    width: 2.5rem;
+    height: 4.5rem;
+}
+
+.our_coffee_navigation_item p{
+    font-size: .8rem;
+    color: #787878;
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
+.item_active{
+    border-bottom: 2px solid #dacaad;
+}
+
+/* -------Intro Section Styling------- */
+#intro_section{
+    margin-top: 5rem;
+    min-height: 68vh;
+}
+
+#intro_section::before{
+    margin-top: 6rem;
+    min-height: 68vh !important;
+}
+
+#intro_section_content h1{
+    z-index: 0 !important;
+}
+
+/* --------Coffee Machines Section Styling-------- */
+.coffee_machines_section .coffee_machines_section_headings{
+    margin-top: 5rem !important;
+}
+
+/* ------Cards Styling------ */
+.our_coffee_cards .card .img_div{
+    width: 40%;
+    text-align: center;
+    border: .7rem solid #f8f7f5;
+}
+
+.our_coffee_cards .card .img_div img{
+    width: 16rem;
+    height: 24rem;
+}
+
+.our_coffee_cards .card .we_serve_section_cards_headings{
+    width: 50%;
+}
+
+.our_coffee_cards .card .we_serve_section_cards_headings p{
+    margin-top: 2rem;
+    line-height: 1.3rem;
+    color: #838383 !important;
+    font-weight: 400 !important;
+}
+
+.medium{
+    background-color: #f7f6f2;
+}
+
+.medium .section_main_headings h1{
+    margin-top: 2rem !important;
+}
+
+/* ------Promote Section Styling------- */
+.promote_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 15rem;
+    margin: 5rem 4rem 0 4rem;
+}
+
+.promote_section .text{
+    color: white;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn button{
+    color: white !important;
+    background-color: black !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+    padding: 1.6rem 2.3rem !important;
+    font-size: .7rem;
+}
+
+.btn button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.btn button:hover{
+    color: white !important;
+}
+
+.container_main_btn{
+    z-index: 0 !important;
+}
+
+/* -----Media Queries------ */
+@media screen and (max-width: 765px){
+    .our_coffee_navigation{
+        display: none;
+    }
+
+    #intro_section, #intro_section::before{
+        margin-top: 0;
+    }
+
+    .our_coffee_cards .card .img_div{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .promote_section{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .promote_section .text{
+        text-align: center;
+    }
+
+    .promote_section .btn{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .promote_section .text{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    .promote_section .text{
+        font-size: 1rem;
+    }
+}

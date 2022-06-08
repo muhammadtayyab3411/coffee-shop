@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <title>Coffee at the office</title>
+    <link rel="stylesheet" href="css/coffee_at_the_office.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    {{>navbar}}
+    
+    {{>intro_section}}
+
+    <div class="section_main_headings">
+        <h1 class="playfair_display_600">Coffee Machines</h1>
+        <p class="muli_regular_300">How big is your office?</p>
+        <div class="vertical_border bread_color"></div>
+    </div>
+
+    <div class="coffee_machines_images_section">
+        <div class="first coffee_machines_img_column" onclick="location.href='/coffee-machines#small'">
+            <img src="images/c_machine_small.png" alt="Small Coffee Machine">
+            <h3 class="playfair_display_300">Small <span class="greater_than_symbol"> <i class="fa fa-chevron-right"></i> </span> </h3>
+            <p class="muli_regular_300">15 to 30</p>
+            <p class="muli_regular_300">employees</p>
+        </div>
+        <div class="second coffee_machines_img_column" onclick="location.href='/coffee-machines#medium'">
+            <img src="images/c_machine_medium.png" alt="Small Coffee Machine">
+            <h3 class="playfair_display_300">Medium <span class="greater_than_symbol"> <i class="fa fa-chevron-right"></i> </span> </h3>
+            <p class="muli_regular_300">30 to 50</p>
+            <p class="muli_regular_300">employees</p>
+        </div>
+        <div class="third coffee_machines_img_column" onclick="location.href='/coffee-machines#large'">
+            <img src="images/c_machine_large.png" alt="Small Coffee Machine">
+            <h3 class="playfair_display_300">Large <span class="greater_than_symbol"> <i class="fa fa-chevron-right"></i> </span> </h3>
+            <p class="muli_regular_300">More than 100</p>
+            <p class="muli_regular_300">employees</p>
+        </div>
+    </div>
+
+    <div class="micro_market_section">
+        <div class="section_main_headings">
+            <h1 class="playfair_display_600">Micro Market</h1>
+            <p class="muli_regular_300">24/7 self service store in your office</p>
+            <div class="vertical_border bread_color"></div>
+        </div>
+
+        <div class="micro_market_content">
+            <div class="micro_market_content_list muli_regular_300">
+                <li><strong>Zero cost for you</strong><br>Only placement spot is needed – we set up and service for free.</li>
+                <li><strong>Custom sizes</strong><br>Based on your individual needs, we can adjust modules and sizes.</li>
+                <li><strong>Wide range of locally-sourced meals, snacks and drinks</strong><br>Up to 100+ products, available 24/7.</li>
+                <li><strong>Best-in-class, fast and innovative service and support</strong><br>We will ensure the shelves are full every day.</li>
+            </div>
+            <div class="micro_market_content_img">
+                <img src="images/Kafija_Bijora.png" alt="Kafija Bijora">
+            </div>
+        </div>
+    </div>
+
+    <div class="our_coffee_section">
+        <div class="section_main_headings">
+            <h1 class="playfair_display_600">Our coffee</h1>
+            <p class="muli_regular_300">Coffee Address is committed to positively impacting the quality of life through exceptional cup of coffee.</p>
+            <div class="vertical_border bread_color"></div>
+        </div>
+
+         {{>our_coffee_section_cards}}
+    </div>
+
+    <div class="business_services_section">
+        <div class="section_main_headings">
+            <h1 class="playfair_display_600">Full Services</h1>
+            <p class="muli_regular_300">for your business</p>
+            <div class="vertical_border bread_color"></div>
+        </div>
+
+        <div class="business_services_section_lists muli_regular_300">
+            <li>Professional coffee machine calibration and installation</li>
+            <li>Service and maintenance</li>
+            <li>6-8 hour response on the breakdowns</li>
+            <li>Coffee and other product delivery</li>
+            <li>Training and consultation</li>
+        </div>
+    </div>
+
+    <div class="promote_section">
+        <div class="text playfair_display_300">Book a free coffee tasting and demonstration.</div>
+        <div class="btn"><a href="/contact-us"><button class="container_main_btn muli_bold promote_section_btn">Contact us</button></a></div>
+    </div>
+
+    {{>footer}}
+</body>
+<script src="https://kit.fontawesome.com/0b090846fe.js" crossorigin="anonymous"></script>
+<script src="js/coffee_at_the_office.js"></script>
+</html>

@@ -1,0 +1,163 @@
+/* -------Offices Section Styling------- */
+.offices_section{
+    margin-top: 5rem;
+}
+
+.offices_section .offices_section_headings h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offices_select_btn{
+    padding: 1rem 2.5rem;
+    font-size: 0.8rem;
+    background-color: var(--we_serve_section_cards_headings_color);
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.2ch;
+    text-transform: uppercase;
+    border: 2px solid var(--we_serve_section_cards_headings_color);
+    position: relative;
+    transition: all .1s ease-out;
+    z-index: 1;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.first, .second, .third{
+    margin: 7rem 4rem 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    row-gap: 4rem;
+}
+
+.second, .third{
+    display: none;
+}
+
+.offices_address .offices_name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.offices_address .offices_name h3{
+    color: var(--we_serve_section_cards_headings_color);
+    font-size: 1.6rem;
+}
+
+.horizontal_border{
+    border-left: 2px solid var(--we_serve_section_cards_headings_color);
+    height: 30px;
+    margin-left: 1.4rem;
+    transform: rotate(90deg);
+}
+
+.offices_address .address{
+    place-self: start;
+    margin-left: 2rem;
+}
+
+.offices_address .email a{
+    color: var(--we_serve_section_cards_headings_color);
+    font-size: 1.2rem;
+}
+
+/* ------Promote Section Styling------- */
+.promote_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 15rem;
+    margin: 5rem 4rem 0 4rem;
+}
+
+.promote_section .text{
+    color: white;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn button{
+    color: white !important;
+    background-color: black !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+    padding: 1.6rem 2.3rem !important;
+    font-size: .7rem;
+}
+
+.btn button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.btn button:hover{
+    color: white !important;
+}
+
+.container_main_btn{
+    z-index: 0 !important;
+}
+
+/* -------Media Queries-------- */
+@media screen and (max-width: 765px){
+    .offices_section .offices_section_headings h1{
+        flex-direction: column;
+    }
+
+    .first, .second, .third{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .offices_address .address{
+        place-self: center;
+    }
+
+    .offices_address .offices_name{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .promote_section{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .promote_section .text{
+        text-align: center;
+    }
+
+    .promote_section .btn{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .promote_section .text{
+        font-size: 1.3rem;
+    }
+
+    #intro_section_content h1{
+        font-size: 2.3rem !important;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    .promote_section .text{
+        font-size: 1rem;
+    }
+
+    .section_main_headings h1{
+        font-size: 2rem !important;
+    }
+}

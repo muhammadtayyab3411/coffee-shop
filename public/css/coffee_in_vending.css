@@ -1,0 +1,206 @@
+#intro_section{
+    min-height: 93vh !important;
+}
+
+#intro_section::before{
+    top: 5rem !important;
+    opacity: 1 !important;
+}
+
+/* -------New Vending Section Styling--------- */
+.new_vending_section{
+    margin-top: 5rem;
+}
+
+.new_vending_section .we_serve_section_cards_headings p{
+    margin-top: 3rem;
+    line-height: 2rem;
+    color: #787878;
+}
+
+/* -------Cashless Payments Section Styling------- */
+.cashless_payments_section{
+    margin: 0 3rem;
+}
+
+.cashless_payments_section_headings h1{
+    color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.cashless_payments_section_headings p{
+    line-height: 1.6rem;
+}
+
+.cashless_payments_section_logos{
+    margin-top: 5rem;
+}
+
+.cashless_payments_section_logos p{
+    text-align: center;
+}
+
+.cashless_payments_section_logos p img{
+    max-height: 2rem;
+    margin: 1.875rem 1.6875rem 0;
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+/* ---------Solutions Section Styling-------- */
+.solutions_section{
+    background-color: #f8f7f5;
+    padding: 5rem 3rem 3rem 3rem;
+    margin-top: 7rem;
+}
+
+.solutions_section_content{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.solutions_section_content li{
+    margin-bottom: 3rem;
+    flex: 1 0 30%;
+    font-weight: 400 !important;
+}
+
+.solutions_section_content li .solution_section_content_li_inner_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions_section_content li .solution_section_content_li_inner_container span{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-right: 1rem;
+}
+
+.solutions_section_content li .solution_section_content_li_inner_container span img{
+    width: 2.7rem;
+    height: 2.7rem;
+    vertical-align: middle;
+}
+
+.solutions_section_content li .solution_section_content_li_inner_container span::before{
+    content: '';
+    width: 3.7rem;
+    height: 3.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.solutions_section_content li .solution_section_content_li_inner_container p{
+    width: 40%;
+}
+
+/* --------Promote Section Styling-------- */
+.promote_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 15rem;
+    margin: 5rem 4rem 0 4rem;
+}
+
+.promote_section .text{
+    color: white;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn button{
+    color: white !important;
+    background-color: black !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+    padding: 1.6rem 2.3rem !important;
+    font-size: .7rem;
+}
+
+.btn button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.btn button:hover{
+    color: white !important;
+}
+
+/* ---------Media Queries------------ */
+@media screen and (max-width: 765px){
+    .new_vending_section .we_serve_section_cards_headings p{
+        text-align: center;
+    }
+
+    .solutions_section_content li{
+        flex: 1 0 45%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .promote_section{
+        flex-direction: column;
+        height: 19rem;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .promote_section .text{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .promote_section .btn{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width :430px){
+    .solutions_section_content li{
+        flex: 1 0 90%;
+    }
+
+    .section_main_headings h1{
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .cashless_payments_section_logos p img{
+        max-height: 1.3rem;
+    }
+
+    .promote_section .text{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    .we_serve_section_cards_headings{
+        width: 75% !important;
+    }
+
+    .card img{
+        width: 14rem !important;
+        height: 11rem !important;
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkj0qph.css">
+</head>
+<body>
+    {{>navbar}}
+
+    {{>intro_section}}
+
+    <div class="offices_section">
+        <div class="section_main_headings offices_section_headings">
+            <h1 class="playfair_display_600">Offices in <select name="office" class="offices_select_btn" id="offices_select_btn">
+                <option value="1" selected>Lithuania</option>
+                <option value="2">Latvia</option>
+                <option value="3">Estonia</option>
+            </select> </h1>
+            <div class="vertical_border bread_color"></div>
+        </div>
+
+        <div class="offices_address">
+            <div class="first">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Vilnius</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Parko g. 39, Avižieniai LT-14198 Vilniaus raj.</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+
+            </div>
+
+
+            <div class="first">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Kaunas</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Taikos pr. 129D, LT-51126 Kaunas</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+            </div>
+
+            <div class="first">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Klaipeda</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Svajonės g. 21, LT-94101 Klaipėda</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+            
+            </div>
+
+            <div class="first">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Siauliai</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Spanguolių g. 5 LT-77106 Šiauliai</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+
+            </div>
+
+            <div class="first">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Panevezys</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>K.Naruševičiaus g. 2 LT-38367 Panevėžys</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+            </div>
+
+            <div class="second">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Riga</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Mūkusalas 42, B ieeja Rīga, LV-1004</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+            </div>
+
+
+            <div class="third">
+
+                <div class="offices_name">
+                    <h3 class="playfair_display_300">Office in Tallinn</h3>
+                    <div class="horizontal_border bread_color"></div>
+                </div>
+
+                <div class="address muli_regular_300">
+                    <p>Osmussaare tee 5/ Taevakivi 1, 13811 Tallinn</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto: muhammadtayyab3411@gmail.com" class="remove_text_decoration">info@coffeeshop.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_us_section">
+        <div class="section_main_headings contact_us_headings">
+            <h1 class="playfair_display_600">Contact us</h1>
+            <div class="vertical_border bread_color"></div>
+        </div>
+
+        <div class="contact_us_content">
+            <div class="contact_us_form_div">
+                <form action="/contact-us" method="post">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="company" id="company" placeholder="Company">
+                    <input type="tel" name="phone_number" id="number" placeholder="Phone Number">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                    <div class="form_submit_area">
+                        <div class="privacy_checkbox_div">
+                           <input type="checkbox" name="privacy_checkbox" id="privacy_checkbox">
+                            <p class="muli_regular_300">By submitting this information to us you confirm that you have read the Coffee Address Personal data processing policy, which is available <a href="" class="remove_text_decoration">here</a></p>
+                        </div>
+
+                        <div class="submit_btn_div">
+                            <button class="container_main_btn muli_bold" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact_us_customer_support_div">
+                <h2 class="playfair_display_300">Customer Support</h2>
+                <p class="muli_regular_300">How can we help you? Give us a call</p>
+                <h3 class="playfair_display_300">Call: +370 5 240 43 43</h3>
+                <p class="muli_regular_300">Frequently asked questions: find an answer by selecting the topic:</p>
+                <a href="/faq"><button class="container_main_btn muli_bold">Read FAQs</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="promote_section">
+        <div class="text playfair_display_300">Book a free coffee tasting and demonstration.</div>
+        <div class="btn"><a href="/our-coffee"><button class="container_main_btn muli_bold promote_section_btn">See Our Coffee</button></a></div>
+    </div>
+
+    {{>footer}}
+</body>
+<script src="https://kit.fontawesome.com/0b090846fe.js" crossorigin="anonymous"></script>
+<script src="js/contact_us.js"></script>
+</html>
