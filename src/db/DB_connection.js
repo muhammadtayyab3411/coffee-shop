@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(`mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@cluster0.koaqv.mongodb.net/coffee-shop-db?retryWrites=true`, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => {
     console.log("Connection Successful");
 })
