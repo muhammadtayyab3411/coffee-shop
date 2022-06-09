@@ -94,7 +94,7 @@ app.post("/subscribe", async(req, res) => {
             });
             await newSubscriber.save();
             
-            // sendMail(email, subject, text).then(result => console.log("Mail sent...")).catch(err => console.log(err));
+            sendMail(email, subject, text).then(result => console.log("Mail sent...")).catch(err => console.log(err));
         }
         res.render("home");
     }
@@ -126,7 +126,7 @@ app.post("/contact-us", async(req, res) => {
 
         await newUserMessage.save();
 
-        // sendMail(email, emailSubject, text).then(result => console.log("Mail sent...")).catch(err => console.log(err));
+        sendMail(email, emailSubject, text).then(result => console.log("Mail sent...")).catch(err => console.log(err));
 
         res.render("contact_us");
     }
