@@ -6,5 +6,3 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PAS
     console.log("Connection Successful");
 })
 .catch(err => console.log(err));
-
-console.log(process.env.DB_URL);
